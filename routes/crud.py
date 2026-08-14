@@ -44,4 +44,4 @@ def delete_expense(id: int, db: Session = Depends(database.get_db)):
     db.delete(expense_query)
     db.commit()
 
-    return "Expense deletedmmm  cx successfully."
+    return "Expense deleted successfully."
